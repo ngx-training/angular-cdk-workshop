@@ -1,0 +1,6 @@
+<mat-list class="navigation">
+  <h3 mat-subheader>Navigation</h3>
+  <mat-list-item *ngFor="let route of routes">
+    <a [routerLink]="route.path" routerLinkActive="active">{{ route.name }}</a>
+  </mat-list-item>
+</mat-list>

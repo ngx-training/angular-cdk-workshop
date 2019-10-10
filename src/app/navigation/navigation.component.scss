@@ -1,0 +1,11 @@
+.navigation {
+  a {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+
+    &.active {
+      color: dodgerblue;
+    }
+  }
+}
