@@ -1,4 +1,15 @@
 <mat-toolbar color="primary">
-  Angular CDK Workshop
+  <mat-icon (click)="sideNav.toggle()">{{ sideNav.opened ? 'menu_open' : 'menu' }}</mat-icon>
+  <span class="toolbar-title">Angular CDK Workshop</span>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sideNav>
+    <h1>Test</h1>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<mat-toolbar class="footer" color="primary">
+  <span>Created by Gregor Doroschenko</span>
+</mat-toolbar>
