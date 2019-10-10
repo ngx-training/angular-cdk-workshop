@@ -16,10 +16,6 @@ export class NavigationComponent {
     {
       name: 'Welcome',
       path: 'welcome'
-    },
-    {
-      name: 'Test',
-      path: 'test'
     }
   ];
 
