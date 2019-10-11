@@ -15,13 +15,13 @@ import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown
 import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-drop.component';
 import { DragDropSolutionComponent } from './exercise-drag-drop/drag-drop-solution/drag-drop-solution.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { DropdownSolutionComponent } from './exercise-dropdown/dropdown-solution/dropdown-solution.component';
 import { PortalModule } from '@angular/cdk/portal';
 import { OverlayModule } from '@angular/cdk/overlay';
-import { DropdownComponent } from './exercise-dropdown/dropdown-solution/dropdown/dropdown.component';
 import { ButtonSelectComponent } from './exercise-dropdown/button-select/button-select.component';
 import { SelectDropdownComponent } from './exercise-dropdown/button-select/select-dropdown/select-dropdown.component';
 import { MatButtonModule } from '@angular/material/button';
+import { SelectOptionComponent } from './exercise-dropdown/button-select/select-option/select-option.component';
+import { A11yModule } from '@angular/cdk/a11y';
 
 @NgModule({
   declarations: [
@@ -32,10 +32,9 @@ import { MatButtonModule } from '@angular/material/button';
     ExerciseDropdownComponent,
     ExerciseDragDropComponent,
     DragDropSolutionComponent,
-    DropdownSolutionComponent,
-    DropdownComponent,
     ButtonSelectComponent,
-    SelectDropdownComponent
+    SelectDropdownComponent,
+    SelectOptionComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +47,8 @@ import { MatButtonModule } from '@angular/material/button';
     DragDropModule,
     PortalModule,
     OverlayModule,
-    MatButtonModule
+    MatButtonModule,
+    A11yModule
   ],
   providers: [],
   bootstrap: [AppComponent]

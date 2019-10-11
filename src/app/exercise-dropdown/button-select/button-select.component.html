@@ -2,7 +2,7 @@
     <button type="button"
     (click)="showDropdown()"
     mat-raised-button
-    color="primary">Button-Select</button>
+    color="primary">{{ displayText ? displayText : 'Select' }}</button>
 
     <app-select-dropdown [reference]="dropDownReference">
       <div class="select-dropdown-wrapper">

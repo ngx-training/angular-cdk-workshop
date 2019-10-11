@@ -19,6 +19,8 @@ export class SelectDropdownComponent {
 
   protected overlayRef: OverlayRef;
 
+  hidden = true;
+
   constructor(private overlay: Overlay) { }
 
   @HostListener('window:resize')
@@ -31,10 +33,12 @@ export class SelectDropdownComponent {
     this.overlayRef.attach(this.portalTemplate);
     this.syncWidth();
     this.overlayRef.backdropClick().subscribe(() => this.hide());
+    this.hidden = false;
   }
 
   hide() {
     this.overlayRef.detach();
+    this.hidden = true;
   }
 
   private syncWidth() {
