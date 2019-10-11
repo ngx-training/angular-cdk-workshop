@@ -19,6 +19,9 @@ import { DropdownSolutionComponent } from './exercise-dropdown/dropdown-solution
 import { PortalModule } from '@angular/cdk/portal';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { DropdownComponent } from './exercise-dropdown/dropdown-solution/dropdown/dropdown.component';
+import { ButtonSelectComponent } from './exercise-dropdown/button-select/button-select.component';
+import { SelectDropdownComponent } from './exercise-dropdown/button-select/select-dropdown/select-dropdown.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,9 @@ import { DropdownComponent } from './exercise-dropdown/dropdown-solution/dropdow
     ExerciseDragDropComponent,
     DragDropSolutionComponent,
     DropdownSolutionComponent,
-    DropdownComponent
+    DropdownComponent,
+    ButtonSelectComponent,
+    SelectDropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import { DropdownComponent } from './exercise-dropdown/dropdown-solution/dropdow
     MatListModule,
     DragDropModule,
     PortalModule,
-    OverlayModule
+    OverlayModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

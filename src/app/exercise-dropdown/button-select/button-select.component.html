@@ -1,0 +1,12 @@
+<div #dropDownReference>
+    <button type="button"
+    (click)="showDropdown()"
+    mat-raised-button
+    color="primary">Button-Select</button>
+
+    <app-select-dropdown [reference]="dropDownReference">
+      <div class="select-dropdown-wrapper">
+        <ng-content></ng-content>
+      </div>
+    </app-select-dropdown>
+</div>
