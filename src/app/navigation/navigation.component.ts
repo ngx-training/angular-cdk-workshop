@@ -16,6 +16,10 @@ export class NavigationComponent {
     {
       name: 'Welcome',
       path: 'welcome'
+    },
+    {
+      name: 'Platform',
+      path: 'platform'
     }
   ];
 
