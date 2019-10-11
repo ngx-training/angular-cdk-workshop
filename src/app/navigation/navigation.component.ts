@@ -27,6 +27,10 @@ export class NavigationComponent {
     {
       name: 'Übung: Dropdown',
       path: 'exercise-dropdown'
+    },
+    {
+      name: 'Übung: Drag&Drop',
+      path: 'exercise-drag-drop'
     }
   ];
 

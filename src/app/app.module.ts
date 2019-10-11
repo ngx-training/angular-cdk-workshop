@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CdkPlatformComponent } from './cdk-platform/cdk-platform.component';
 import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown.component';
+import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-drop.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown
     WelcomeComponent,
     NavigationComponent,
     CdkPlatformComponent,
-    ExerciseDropdownComponent
+    ExerciseDropdownComponent,
+    ExerciseDragDropComponent
   ],
   imports: [
     BrowserModule,
