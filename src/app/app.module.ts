@@ -11,13 +11,15 @@ import { MatListModule } from '@angular/material/list';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CdkPlatformComponent } from './cdk-platform/cdk-platform.component';
+import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     NavigationComponent,
-    CdkPlatformComponent
+    CdkPlatformComponent,
+    ExerciseDropdownComponent
   ],
   imports: [
     BrowserModule,

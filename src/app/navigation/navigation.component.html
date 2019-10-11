@@ -3,4 +3,8 @@
   <mat-list-item *ngFor="let route of routes">
     <a [routerLink]="route.path" routerLinkActive="active">{{ route.name }}</a>
   </mat-list-item>
+  <h3 mat-subheader>Übungen</h3>
+  <mat-list-item *ngFor="let exercise of exercises">
+    <a [routerLink]="exercise.path" routerLinkActive="active">{{ exercise.name }}</a>
+  </mat-list-item>
 </mat-list>

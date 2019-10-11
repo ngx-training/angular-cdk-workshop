@@ -23,6 +23,13 @@ export class NavigationComponent {
     }
   ];
 
+  exercises: NavRoute[] = [
+    {
+      name: 'Übung: Dropdown',
+      path: 'exercise-dropdown'
+    }
+  ];
+
   constructor() { }
 
 }
