@@ -15,6 +15,10 @@ import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown
 import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-drop.component';
 import { DragDropSolutionComponent } from './exercise-drag-drop/drag-drop-solution/drag-drop-solution.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DropdownSolutionComponent } from './exercise-dropdown/dropdown-solution/dropdown-solution.component';
+import { PortalModule } from '@angular/cdk/portal';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { DropdownComponent } from './exercise-dropdown/dropdown-solution/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     CdkPlatformComponent,
     ExerciseDropdownComponent,
     ExerciseDragDropComponent,
-    DragDropSolutionComponent
+    DragDropSolutionComponent,
+    DropdownSolutionComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    DragDropModule
+    DragDropModule,
+    PortalModule,
+    OverlayModule
   ],
   providers: [],
   bootstrap: [AppComponent]
