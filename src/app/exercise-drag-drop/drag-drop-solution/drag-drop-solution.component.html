@@ -1,0 +1,25 @@
+<div class="todo-container">
+  <h2>Offene Aufgaben:</h2>
+  <mat-list cdkDropList
+            #todoList="cdkDropList"
+            [cdkDropListData]="todos"
+            [cdkDropListConnectedTo]="doneList"
+            (cdkDropListDropped)="drop($event)">
+    <mat-list-item *ngFor="let todoItem of todos" cdkDrag>
+      {{ todoItem }}
+    </mat-list-item>
+  </mat-list>
+</div>
+
+<div class="todo-container">
+  <h2>Erledigt:</h2>
+  <mat-list cdkDropList
+            #doneList="cdkDropList"
+            [cdkDropListData]="done"
+            [cdkDropListConnectedTo]="todoList"
+            (cdkDropListDropped)="drop($event)">
+    <mat-list-item *ngFor="let doneItem of done">
+      {{ doneItem }}
+    </mat-list-item>
+  </mat-list>
+</div>

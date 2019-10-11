@@ -1,0 +1,15 @@
+.todo-container {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin: 0 2em;
+
+  mat-list {
+    mat-list-item {
+      border: 1px solid rgba(0,0,0,0.5);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

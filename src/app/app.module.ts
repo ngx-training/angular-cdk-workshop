@@ -13,6 +13,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CdkPlatformComponent } from './cdk-platform/cdk-platform.component';
 import { ExerciseDropdownComponent } from './exercise-dropdown/exercise-dropdown.component';
 import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-drop.component';
+import { DragDropSolutionComponent } from './exercise-drag-drop/drag-drop-solution/drag-drop-solution.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-dr
     NavigationComponent,
     CdkPlatformComponent,
     ExerciseDropdownComponent,
-    ExerciseDragDropComponent
+    ExerciseDragDropComponent,
+    DragDropSolutionComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { ExerciseDragDropComponent } from './exercise-drag-drop/exercise-drag-dr
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
