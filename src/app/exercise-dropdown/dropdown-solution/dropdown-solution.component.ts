@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { DropdownService } from './dropdown/dropdown.service';
 
 @Component({
   selector: 'app-dropdown-solution',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownSolutionComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild(DropdownComponent, { static: false }) dropdown: DropdownComponent;
+
+  constructor(private dropdownService: DropdownService) {
+    this.dropdownService.register(this);
+  }
 
   ngOnInit() {
+  }
+
+  showDropdown() {
+    this.dropdown.show();
+  }
+
+  hideDropdown() {
+    this.dropdown.hide();
   }
 
 }

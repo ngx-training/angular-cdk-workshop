@@ -15,7 +15,7 @@ export class DropdownComponent {
 
   @Input() reference: HTMLElement;
 
-  @ViewChild(CdkPortal, { static: true }) contentTemplate: CdkPortal;
+  @ViewChild(CdkPortal, { static: false }) contentTemplate: CdkPortal;
 
   protected overlayRef: OverlayRef;
 
