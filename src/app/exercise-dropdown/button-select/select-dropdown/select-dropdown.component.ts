@@ -47,24 +47,13 @@ export class SelectDropdownComponent {
     }
 
     const referenceRectangle = this.reference.getBoundingClientRect();
+
     this.overlayRef.updateSize({ width: referenceRectangle.width });
   }
 
   protected getOverlayConfig(): OverlayConfig {
-    const positionStrategy = this.overlay.position()
-    .flexibleConnectedTo(this.reference)
-    .withPush(false)
-    .withPositions([{
-      originX: 'start',
-      originY: 'bottom',
-      overlayX: 'start',
-      overlayY: 'top'
-    }, {
-      originX: 'start',
-      originY: 'top',
-      overlayX: 'start',
-      overlayY: 'bottom'
-    }]);
+    const positionStrategy = this.overlay.position().global().centerHorizontally().centerVertically();
+
 
     return new OverlayConfig({
       positionStrategy: positionStrategy,
